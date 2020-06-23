@@ -1,0 +1,83 @@
+In [1]:
+#equal or not
+a = input("Enter the first number: ")
+b = input("Enter the second number: ")
+# if a is b: - Compares id's, and can cause inconsistencies. Use == instead.
+if a == b:
+  print ("Both inputs are equal") 
+else:
+  print ("Your input is not equal.")
+
+Enter the first number: 6
+Enter the second number: 8
+Your input is not equal.
+
+
+In [2]:
+#Python Program to find Square root of a Number
+ 
+import math
+ 
+number = float(input(" Please Enter any numeric Value : "))
+ 
+squareRoot = math.sqrt(number)
+ 
+print("The Square Root of a Given Number {0}  = {1}".format(number, squareRoot))
+
+ Please Enter any numeric Value : 5
+The Square Root of a Given Number 5.0  = 2.23606797749979
+
+
+In [3]:
+#add of numbers
+num1 = input('Enter first number: ')
+num2 = input('Enter second number: ')
+ 
+# Add two numbers
+sum = float(num1) + float(num2)
+ 
+# Display the sum
+print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+
+Enter first number: 10
+Enter second number: 8
+The sum of 10 and 8 is 18.0
+
+
+In [4]:
+#area of  triangle
+a=float(input('enter first side'))
+b=float(input('enter second side'))
+c=float(input('enter third side'))
+s=(a+b+c)/2
+area=(s*(s-a)*(s-b)*(s-c))**0.5
+print('the area of the triangle is %0.2f'%area)
+
+enter first side10
+enter second side6
+enter third side8
+
+
+In [5]:
+#Solve the quadratic equation ax**2 + bx + c = 0
+ 
+# import complex math module
+import cmath
+ 
+a = 8
+b = 4
+c = 2
+ 
+# calculate the discriminant
+d = (b**2) - (4*a*c)
+ 
+# find two solutions
+sol1 = (-b-cmath.sqrt(d))/(2*a)
+sol2 = (-b+cmath.sqrt(d))/(2*a)
+ 
+print('The solution are {0} and {1}'.format(sol1,sol2))
+
+The solution are (-0.25-0.4330127018922193j) 
+and (-0.25+0.4330127018922193j)
+
+
